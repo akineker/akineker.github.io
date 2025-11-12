@@ -1,0 +1,199 @@
+/* Basic reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    /* background-color: #f4f7f6; */
+    background-color: #f3f1ec;
+    color: #333;
+}
+
+/* Page layout: sidebar + content */
+.page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 16px;
+    display: flex;
+    gap: 32px;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 0 0 260px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.name {
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.role {
+    margin-top: 4px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Sidebar links */
+.sidebar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.sidebar-links__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.sidebar-links__item .icon {
+    width: 20px;
+    text-align: centre;
+    color: #555;
+}
+
+.sidebar a {
+    color: #222;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #DC2E00;
+    text-decoration: underline;
+}
+
+/* Main content links */
+.content a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: #DC2E00;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* Side-bar Icon Image */
+.sidebar .icon-image {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 6px;
+}
+
+/* Main content */
+.content {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px 28px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.content-header {
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.content-header h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Logos row */
+.header-logos {
+    display: flex;
+    gap: 8px;
+    align-items: centre;
+}
+
+.header-logos img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Text */
+.note {
+    font-style: italic;
+    color: #666;
+}
+
+.email {
+    font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Sections list */
+.content {
+
+}
+.sections-list {
+    margin-top: 12px;
+    padding-left: 20px;
+}
+
+.sections-list li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.section-link {
+    color: #d60303;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.section-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+    .page {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        text-align: left;
+    }
+
+    .sidebar-links__item {
+        justify-content: flex-start;
+    }
+
+    .content-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}

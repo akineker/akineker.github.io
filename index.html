@@ -3,100 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akın Eker - Personal Page</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f4f7f6;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-        .container {
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-        }
-        .profile-pic {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%; /* Makes the image a circle */
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin: 0 0 10px;
-            color: #222;
-        }
-        .bio {
-            font-size: 1.1em;
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-        .links a {
-            display: block;
-            background-color: #007aff; /* A nice blue */
-            color: white;
-            padding: 15px 20px;
-            margin-bottom: 15px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 1.1em;
-            font-weight: 500;
-            transition: background-color 0.2s ease, transform 0.2s ease;
-        }
-        .links a:hover {
-            background-color: #0056b3; /* A darker blue on hover */
-            transform: scale(1.02);
-        }
-        /* --- Optional: Specific colors for popular sites --- */
-        .links a.linkedin { background-color: #0077B5; }
-        .links a.linkedin:hover { background-color: #005582; }
+    <title>Akin Eker – Personal Website</title>
+    <meta name="description" content="Personal website of Akin Eker – blockchain-of-things, consensus, and distributed systems research.">
+    <link rel="stylesheet" href="css/style.css">
 
-        .links a.github { background-color: #333; }
-        .links a.github:hover { background-color: #111; }
-
-        .links a.twitter { background-color: #1DA1F2; }
-        .links a.twitter:hover { background-color: #0c85d0; }
-        
-        .links a.youtube { background-color: #FF0000; }
-        .links a.youtube:hover { background-color: #cc0000; }
-
-    </style>
+    <!-- SPECIAL FONTS  -->
+    <!-- <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"> -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
 
-    <div class="container">
-        
-        <img src="https://via.placeholder.com/120" alt="Akın Eker" class="profile-pic">
-        
-        <h1>Akın Eker</h1>
-        
-        <p class="bio">
-            Biography
+<div class="page">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+        <img src="assets/img/profile.png" alt="Profile Image" class="avatar">
+
+        <h1 class="name">Akin Eker</h1>
+        <p class="role">Blockchain, Distributed Systems &amp; Consensus Protocol  Researcher</p>
+
+        <ul class="sidebar-links">
+            <li class="sidebar-links__item">
+                <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                <span>Bristol, UK</span>
+            </li>
+            <li class="sidebar-links__item">
+                <span class="icon"><i class="fa-regular fa-envelope"></i></span>
+                <a href="mailto:akin.eker@bristol.ac.uk">Email</a>
+            </li>
+            <li class="sidebar-links__item">
+                <span class="icon"><i class="fa-brands fa-linkedin"></i></span>
+                <a href="https://www.linkedin.com/in/akin-eker/" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+            </li>
+            <li class="sidebar-links__item">
+                <span class="icon"><i class="fa-brands fa-github"></i></span>
+                <a href="https://github.com/akineker" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+            </li>
+            <li class="sidebar-links__item">
+                <span class="icon"><i class="fa-solid fa-building-columns"></i></span>
+                <a href="https://research-information.bris.ac.uk/en/persons/akin-eker-2" target="_blank" rel="noopener noreferrer">
+                    University Research Profile
+                </a>
+            </li>
+            <li class="sidebar-links__item">
+                <span class="icon"><i class="fa-brands fa-orcid"></i></span>
+                <a href="https://orcid.org/0000-0003-0678-2755" target="_blank" rel="noopener noreferrer">
+                    ORCID
+                </a>
+            </li>
+            <li class="sidebar-links__item">
+                <span class="icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                <a href="---" target="_blank" rel="noopener noreferrer">
+                    Google Scholar
+                </a>
+            </li>
+            <li class="sidebar-links__item">
+                <span class="icon"><i class="fa-brands fa-x-twitter"></i></span>
+                <a href="---" target="_blank" rel="noopener noreferrer">
+                    Twitter (X)
+                </a>
+            </li>
+            <li class="sidebar-links__item">
+                <img src="assets/img/hashnode-icon.png" alt="Hashnode" class="icon-image">
+                <a href="---" target="_blank" rel="noopener noreferrer">
+                    HashNode - Blogs
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+        <header class="content-header">
+            <h2></h2>
+
+            <!-- <div class="header-logos">
+                <img src="assets/img/logo1.png" alt="Logo 1">
+                <img src="assets/img/logo2.png" alt="Logo 2">
+                <img src="assets/img/logo3.png" alt="Logo 3">
+            </div> -->
+        </header>
+
+        <p>
+            I am Akin, and this is my personal website. I use it to collect and share my work
+            on blockchain-of-things, consensus mechanisms, and scalable distributed systems.
+            
+        </p>
+        <p>   
+            I am about to graduate from the joint Ph.D. programme at University of Bristol under the supervision of Prof Theo Tryfonas and Prof George Oikonomou.
+            
+            PhD Thesis: 
+        </p>
+        <p>   
+            Before that, I was a MSc Computer Science student at University of Southampton supervised by Dr Leonardo Aniello.
+
+            Master Thesis:
         </p>
 
-        <div class="links">
-            LINKS
-            <!-- <a href="https://linkedin.com/in/your-username" class="linkedin">LinkedIn</a>
-            <a href="https://github.com/akineker" class="github">GitHub</a>
-            <a href="https://twitter.com/your-username" class="twitter">Twitter / X</a>
-            <a href="https://youtube.com/your-channel" class="youtube">YouTube</a>
-            <a href="https://your-portfolio.com">My Portfolio</a> -->
-        </div>
-        
-    </div>
+        <p>Here is a brief description of what you can find on this site:</p>
 
+        <ul class="sections-list">
+            <li>
+                <p>Selected Publications <span class="icon">🔗</span></p>
+                    <ul>
+                        <li>
+                            <a href="---" target="_blank" rel="noopener noreferrer">
+                                Publication-1
+                            </a>
+                        </li>
+                    </ul>
+            </li>
+            <li>
+                <p>
+                    Technical Reports:
+                </p>
+            </li>
+            <li>
+                <p>
+                        Lecture Notes & Tutorials (on HashNode)
+                    <ul>
+                        <li>
+                            <span><i class="fa-solid fa-pen-alt"></i></span>
+                            <a href="---" target="_blank" rel="noopener noreferrer">
+                                Zero-Knowledge Proofs
+                            </a>
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-pen-alt"></i></span>
+                            <a href="---" target="_blank" rel="noopener noreferrer">
+                                Another Blog
+                            </a>
+                        </li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <span class="icon"><i class="fa-regular fa-address-card"></i></span>
+                    <!-- <span class="icon"><i class="fa-solid fa-id-badge"></i></span>
+                    <span class="icon"><i class="fa-regular fa-clipboard"></i></span> -->
+                    <a href="---" target="_blank" rel="noopener noreferrer">
+                        Academic CV
+                    </a>
+                </p>
+            </li>
+        </ul>
+    </main>
+
+</div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
