@@ -82,7 +82,7 @@ body {
 }
 
 .sidebar a:hover {
-    color: #DC2E00;
+    color: #e64500;
     text-decoration: underline;
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .content a:hover {
-    color: #DC2E00;
+    color: #e64500;
     font-weight: 500;
     text-decoration: underline;
 }
@@ -168,7 +168,7 @@ body {
 }
 
 .section-link {
-    color: #d60303;
+    color: #e64500;
     text-decoration: none;
     font-weight: 500;
 }
@@ -203,7 +203,7 @@ body {
     margin: 0px;
     font-weight: 600;
     text-decoration: underline;
-    text-decoration-color: #000000;
+    text-decoration-color: #333;
     text-decoration-thickness: 3px;
     text-underline-offset:3px; 
 }
