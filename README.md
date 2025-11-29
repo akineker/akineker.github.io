@@ -1,1 +1,1 @@
-# akineker.github.io
+All content in this repository is © Akin Eker. No reuse or redistribution permitted without explicit permission.
